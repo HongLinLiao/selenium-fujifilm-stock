@@ -1,3 +1,5 @@
-schedule
+python-dotenv
+apscheduler
+discord.py
 selenium
 webdriver-manager
