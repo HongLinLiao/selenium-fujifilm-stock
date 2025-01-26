@@ -77,7 +77,7 @@ async def xm5(ctx):
     isStock = check_product_stock()
     if isStock: 
         print(f"{formatted_time} Manually check X-M5: ✅ Stock!")
-        await ctx.send("Manually check X-M5: ✅ Stock!", genLinkBtnView('X-M5', get_product_link()))
+        await ctx.send("Manually check X-M5: ✅ Stock!", view=genLinkBtnView('X-M5', get_product_link()))
     else:
         print(f"{formatted_time} Manually check X-M5: ❌ No stock")
-        await ctx.send("Manually check X-M5: ❌ No stock", genLinkBtnView('X-M5', get_product_link()))
+        await ctx.send("Manually check X-M5: ❌ No stock", view=genLinkBtnView('X-M5', get_product_link()))
