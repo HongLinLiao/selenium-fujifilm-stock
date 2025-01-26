@@ -1,15 +1,8 @@
-import time
-import schedule
-from check_stock import check_product_stock
+import asyncio
+from discord_bot import run_discord_bot
 
-print("🚀 Start checking stock...")
+async def main():
+    await run_discord_bot(),
 
-# schedule.every(3).seconds.do(check_product_stock)
-schedule.every(1).minutes.do(check_product_stock)
-
-try:
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("Stop")
+if __name__ == "__main__":
+    asyncio.run(main())
