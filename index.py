@@ -1,9 +1,6 @@
 import time
 import schedule
-from check_chrome import check_chrome
 from check_stock import check_product_stock
-
-check_chrome();
 
 print("🚀 Start checking stock...")
 
